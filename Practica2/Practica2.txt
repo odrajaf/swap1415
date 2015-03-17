@@ -1,0 +1,26 @@
+
+
+1º Instalamos Ubuntu server 12.04.3 marcando las opciones de LAMP y OPENSSH, a esta instalación la llamaremos ubuntu01
+
+2º En ubuntu01 mediante un editor de textos en modo superusuario `sudo vim /etc/network/interfaces` añadimos las siguientes lineas
+
+auto eth1
+iface eth1 inet static
+address 192.168.1.100
+gateway 192.168.1.1
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+
+
+3º Creamos otra máquina virtual e instalamos Ubuntu server 12.04.3 con exactamente las mismas opciones de antes, a la que llamaremos ubuntu02
+
+4º Modificamos también el archivo /etc/network/interfaces pero cambiando la dirección ip de ubuntu02
+
+auto eth1
+iface eth1 inet static
+address 192.168.1.101
+gateway 192.168.1.1
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
