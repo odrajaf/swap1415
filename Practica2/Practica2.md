@@ -43,20 +43,18 @@ para instalar rsync usamos `sudo apt-get install rsync`
    
    `ssh-keygen -t dsa`
 
-copiamos la clave publica de ubuntu02 en ubuntu01
-
+copiamos la clave publica de ubuntu02 en ubuntu01<br/>
 `ssh-copy-id -i ~/.ssh/id_dsa.pub fajardo@192.168.1.100`
 	
 ![alt text][cpClavePublica]
 
-probamos a conectarnos por ssh sin que nos pida clave
+probamos a conectarnos por ssh sin que nos pida clave<br/>
 	`ssh 192.168.1.100 -l fajardo`
 	
 ![alt text][sshClavePub]
 
 7º Modificamos el archivo crontab de ubuntu02 con `sudo vim /etc/crontab`
-añadimos la línea
-`* * * * *	fajardo	rsync -avz -e ssh fajardo@192.168.1.100:/var/www/* /var/www`
+añadimos la línea<br/>`* * * * *	fajardo	rsync -avz -e ssh fajardo@192.168.1.100:/var/www/* /var/www`
 
 esto actualizará el contenido de las carpetas cada minuto.
 
