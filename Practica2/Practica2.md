@@ -33,15 +33,13 @@
     broadcast 192.168.1.255
 
 
-5º Antes de usar rsync es conveniente para evitar problemas de permisos hacer en ambas maquinas `sudo chown fajardo:fajardo -R /var/www`
+5º Antes de usar rsync es conveniente para evitar problemas de permisos hacer en ambas maquinas<br/>`sudo chown fajardo:fajardo -R /var/www`
 
 para instalar rsync usamos `sudo apt-get install rsync`
 		
 
 6º Preferimos por usar un usuario normal en lugar de root para el ssh,
-   generamos la clave publica en ubuntu02 
-   
-   `ssh-keygen -t dsa`
+   generamos la clave publica en ubuntu02<br/>`ssh-keygen -t dsa`
 
 copiamos la clave publica de ubuntu02 en ubuntu01<br/>
 `ssh-copy-id -i ~/.ssh/id_dsa.pub fajardo@192.168.1.100`
