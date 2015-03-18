@@ -38,7 +38,7 @@
 para instalar rsync usamos `sudo apt-get install rsync`
 		
 
-6º Preferimos por usar un usuario normal en lugar de root para el ssh,
+6º Preferimos por usar un usuario normal en lugar de root para el ssh, 
    generamos la clave publica en ubuntu02<br/>`ssh-keygen -t dsa`
 
 copiamos la clave publica de ubuntu02 en ubuntu01<br/>
