@@ -12,7 +12,8 @@ network 192.168.1.0
 broadcast 192.168.1.255
 
 
-3º Creamos otra máquina virtual e instalamos Ubuntu server 12.04.5 con exactamente las mismas opciones de antes, a la que llamaremos ubuntu02
+3º Creamos otra máquina virtual e instalamos Ubuntu server 12.04.5 con exactamente las mismas opciones de antes, 
+a la que llamaremos ubuntu02
 
 4º Modificamos también el archivo /etc/network/interfaces pero cambiando la dirección ip de ubuntu02
 
@@ -25,7 +26,8 @@ network 192.168.1.0
 broadcast 192.168.1.255
 
 
-5º Antes de usar rsync es conveniente para evitar problemas de permisos hacer en ambas maquinas `sudo chown fajardo:fajardo -R /var/www`
+5º Antes de usar rsync es conveniente para evitar problemas de permisos hacer en ambas maquinas
+`sudo chown fajardo:fajardo -R /var/www`
 
 		para instalar rsync usamos `sudo apt-get install rsync`
 
@@ -43,8 +45,8 @@ broadcast 192.168.1.255
 
 	añadimos la línea `* * * * *	fajardo	rsync -avz -e ssh fajardo@192.168.1.100:/var/www/* /var/www`
 
-	esto actualizará el contenido de las carpetas cada minuto(Captura). En caso de modificar algún archivo de /var/www/ en ubuntu01
-	se modificará en ubuntu02 cada minuto (captura)
+	esto actualizará el contenido de las carpetas cada minuto(Captura). En caso de modificar algún archivo 
+	de /var/www/ en ubuntu01 se modificará en ubuntu02 cada minuto (captura)
 
 
 	
