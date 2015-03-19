@@ -6,7 +6,7 @@ Datos sin redundancia:
 ![Disponibilidad sin redundancia.png](./imagenesActividades/Disponibilidad sin redundancia.png "")
 
 ATotal = 85% x 90% x 99.9% x 98% x 85% x 99% x 99.99% x 95% = 59.87%
-</br></br></br>
+<br><br><br>
 Datos con 2 elementos de cada componente excepto el Data Center que sigue siendo solo uno:
 
 ![Disponibilidad con 2 redundancias.png](./imagenesActividades/Disponibilidad con 2 redundancias.png "")
