@@ -8,3 +8,12 @@
 > 
 > c)99,6625%
 </br>
+
+####2º Necesitamos hacer actualizaciones de software de nuestros equipos y durente un tiempo los servidores estarán no disponibles,</br> ¿cómo haremos realizaremos las actulizaciones del software?
+
+> a)De forma rápida se actualizará evitando estar caido el menor tiempo posible. 
+> 
+> b)Nunca deberemos actualizar el software una vez el servidor está realizando un servicio a los usuarios. 
+> 
+> **c)Se realizará la actualización en horas de menor uso por los usuarios.**
+</br>
