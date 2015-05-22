@@ -20,7 +20,8 @@
 [siegecaso2]:./siegecaso2.png
 [siegecaso3]:./siegecaso3.png
 [graficaSiege]:./graficaSiege.png
-
+[disponibilidadSiege]:./disponibilidadSiege.png
+[TemTransSiege]:./TemTransSiege.png
 
 Para esta práctica usaremos la herramienta **apache benchmark** (ab)
 y **siege** en tres casos diferentes de servir peticiones web.
@@ -180,3 +181,15 @@ Ahora ejecutaremos siege para cada una de las concurrencias a testear a la direc
 Por ultimo analizaremos los datos reunidos de todas las ejecucines de siege para los diferentes casos y concurrencias, en la siguiente tabla se muestran todos los datos obtenidos en las ejeciones de los test.
 
 ![alt text][graficaSiege]
+
+Comenzaremos analizando la **disponibilidad**, en este caso hemos obtenido resultados dispares.
+
+![alt text][disponibilidadSiege]
+
+Curiosamente una sola máquina no puede cubrir más de las 70 peticiones concurrentes mientras que con Nginx se cubrian incluso con niveles de concurrencia mucho más altos. 
+HAproxy muestra unos datos muy por debajo que una sola máquina lo que nos hizo comprobar que balanceaba correctamente, como resultado vimos que una sola máquina en un entorno virtual sin latencias podría responder más peticiones que con el balanceador.
+<br><br>
+
+El **tiempo transcurrido** es más bien una referencia para los demás parametros por lo que su gráfica no nos da demasiados datos, además de que todos tiempos de referencia se hicienron en 60s
+
+![alt text][TemTransSiege]
