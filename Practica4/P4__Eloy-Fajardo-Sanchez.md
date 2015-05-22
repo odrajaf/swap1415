@@ -26,7 +26,7 @@ En el **primer caso** solo se harán peticiones a un servidor web, teniendo que 
 En el **segundo caso** la maquina testeadora que hará uso de las herramientas mencionadas hará peticiones a un balanceaador *HAproxy* y balanceará las peticiones a los dos servidores web, en la siguente imagen vemos claramente a que nos referimos.
 ![alt text][caso2]
 
-
+<br>
 El **tercer caso** es similar al anterior ya que sigue la misma filosofía pero el balanceador será *Nginx*
 ![alt text][caso3]
 
@@ -114,3 +114,10 @@ En la siguente gráfica apreciaremos las respuestas no respondidas por el servid
 Como podemos ver por debajo de las 100 peticiones concurrentes en todos los casos el sistema responde bastante bien, aquí como curiosidad HAproxy consigue perores resultados que una sola máquina, esto se debe a que se han realizado las pruebas en una máquina virtual y en este ambito no se pueden realizar con precisión los Benchmark. 
 
 Aun en un entorno virtualizado sin retardos, nginx consigue responder a más número de peticiones concurrentes ya que utiliza un balanceador con dos máquinas servidoras web.
+
+<br>
+En la siguente gráfica veremos las respuestas por segundo de cada caso.
+
+![alt text][requestPerSAb]
+
+Como podemos ver Nginx tiene casi el doble de respuestar por segundo que una sola máquina, hecho que se refleja en la 1º gráfica, en cambio HAproxy aumenta el numero de respuestas en función de las peticiones concurrentes llegadas. Otra vez podemos asegurar que usar un balanceador mejora las prestaciones de nuestra granja Web.
