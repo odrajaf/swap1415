@@ -26,6 +26,7 @@ En el **primer caso** solo se harán peticiones a un servidor web, teniendo que 
 En el **segundo caso** la maquina testeadora que hará uso de las herramientas mencionadas hará peticiones a un balanceaador *HAproxy* y balanceará las peticiones a los dos servidores web, en la siguente imagen vemos claramente a que nos referimos.
 ![alt text][caso2]
 
+
 El **tercer caso** es similar al anterior ya que sigue la misma filosofía pero el balanceador será *Nginx*
 ![alt text][caso3]
 
