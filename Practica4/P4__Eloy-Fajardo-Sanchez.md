@@ -15,6 +15,10 @@
 [timeTakenAb]:./timeTakenAb.png
 [failRequestAb]:./failRequestAb.png
 [requestPerSAb]:./requestPerSAb.png
+[siegecaso1]:./siegecaso1.png
+[siegecaso1b]:./siegecaso1b.png
+[siegecaso2]:./siegecaso2.png
+
 
 Para esta práctica usaremos la herramienta **apache benchmark** (ab)
 y **siege** en tres casos diferentes de servir peticiones web.
@@ -121,3 +125,49 @@ En la siguente gráfica veremos las respuestas por segundo de cada caso.
 ![alt text][requestPerSAb]
 
 Como podemos ver Nginx tiene casi el doble de respuestar por segundo que una sola máquina, hecho que se refleja en la 1º gráfica, en cambio HAproxy aumenta el numero de respuestas en función de las peticiones concurrentes llegadas. Otra vez podemos asegurar que usar un balanceador mejora las prestaciones de nuestra granja Web.
+
+###Primer Caso con Siege
+Al igual que antes realizaremos primero una comprobación a ver si ambas máquinas están activas y dando respuesta mediante curl
+
+    curl 192.168.1.100
+<br>
+Ahora describiremos las opciones que usaremos con la herramienta siege
+
+    siege -b -t60S -c 70 -v http://192.168.1.100
+Con la opción -b ejecutará sin pausa las peticiones pudiendo así obtener buenos datos, la obción -t indica el tiempo del test, -c el numero de peticiones concurrencias, -v modo verbose y finalmente la dirección a la que queremos testear.
+
+El rango de concurrencia que usaremos con siege es de **70** a **115** peticiones.
+
+En la siguiente captura mostramos como sería una ejecución del test para el primer caso con *una sola máquina servidora*, como inconveniente no podremos redirigir la salida como con ab y deberemos de ver los datos al final de la ejecución del test.
+
+![alt text][siegecaso1]
+
+El final de la ejecución sería, *marcando en rojo los datos que luego analizaremos*
+
+![alt text][siegecaso1b]
+<br><br>
+
+###Segundo Caso con Siege (HAproxy)
+Volveremos a cerciorarnos que tanto el balanceador HAproxy como el servidor web 1 y el servidor web dos están activos.
+
+       curl 192.168.1.100
+       curl 192.168.1.101
+       curl 192.168.1.102
+Con siege ahora la dirección a testear es la dirección del balanceador (192.168.1.102) siendo el comando a usar(para cada concurrencia)
+    
+    siege -b -t60S -c 70 -v http://192.168.1.102
+    
+![alt text][siegecaso2]
+<br><br>
+
+
+###Tercer Caso con Siege (Nginx)
+Como anteriormente hacemos el curl correspondiente al balanceador, en este caso Nginx y a los dos servidores web
+
+       curl 192.168.1.100
+       curl 192.168.1.101
+       curl 192.168.1.103
+       
+Ahora ejecutaremos siege para cada una de las concurrencias a testear a la dirección del balanceador nginx
+    
+    siege -b -t60S -c 70 -v http://192.168.1.103
