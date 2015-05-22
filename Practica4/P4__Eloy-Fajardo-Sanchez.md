@@ -22,6 +22,9 @@
 [graficaSiege]:./graficaSiege.png
 [disponibilidadSiege]:./disponibilidadSiege.png
 [TemTransSiege]:./TemTransSiege.png
+[TiemRespuesta]:./TiemRespuesta.png
+[tasaTransmision]:./tasaTransmision.png
+
 
 Para esta práctica usaremos la herramienta **apache benchmark** (ab)
 y **siege** en tres casos diferentes de servir peticiones web.
@@ -193,3 +196,23 @@ HAproxy muestra unos datos muy por debajo que una sola máquina lo que nos hizo 
 El **tiempo transcurrido** es más bien una referencia para los demás parametros por lo que su gráfica no nos da demasiados datos, además de que todos tiempos de referencia se hicienron en 60s
 
 ![alt text][TemTransSiege]
+<br><br>
+
+En el **tiempo de respuesta** se puede apreciar cuando servidor está sirviendo bien o no una página.
+
+![alt text][TiemRespuesta]
+
+En esta grafica apreciamos que cuando una sola máquina sirve tiene un tiempo de respuesta 22~ (línea amarilla) y aumenta un poco mientras el servidor responde correctamente, cuando la linea amarilla cae, el servidor apenas sirve correctamente las peticiones aunque estas se tarden menos en servirse en forma de error.
+
+Nginx (líena Roja) muestra como conforme aumenta la carga aunque las sirva todas las peticiones, tarda más en servirlas a más carga.
+<br><br>
+
+Con el siguiente parametro **Tasa de Transmisión** veremos claramente la ventaja entre una sola máquina servidora y una granja web.
+
+![alt text][tasaTransmision]
+
+En este caso los balanceadores tienen practicamente el doble de tasa de transmisión que una sola máquina, además de mantenerse cuando la carga de peticiones es mayor.
+
+###Conclusión
+Después de todas las pruebas con ab como con siege comprobamos que tener una granja web incluso en un entorno sintetico en el que hemos realizado las pruebas usar una granja web en lugar de un solo servidor nos supone una mejora de prestaciones y una posible escalabilidad más sencilla de cara al futuro.
+
