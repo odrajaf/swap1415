@@ -18,6 +18,8 @@
 [siegecaso1]:./siegecaso1.png
 [siegecaso1b]:./siegecaso1b.png
 [siegecaso2]:./siegecaso2.png
+[siegecaso3]:./siegecaso3.png
+[graficaSiege]:./graficaSiege.png
 
 
 Para esta práctica usaremos la herramienta **apache benchmark** (ab)
@@ -136,7 +138,7 @@ Ahora describiremos las opciones que usaremos con la herramienta siege
     siege -b -t60S -c 70 -v http://192.168.1.100
 Con la opción -b ejecutará sin pausa las peticiones pudiendo así obtener buenos datos, la obción -t indica el tiempo del test, -c el numero de peticiones concurrencias, -v modo verbose y finalmente la dirección a la que queremos testear.
 
-El rango de concurrencia que usaremos con siege es de **70** a **115** peticiones.
+El rango de concurrencia que usaremos con siege es de **70** a **115** **peticiones**.
 
 En la siguiente captura mostramos como sería una ejecución del test para el primer caso con *una sola máquina servidora*, como inconveniente no podremos redirigir la salida como con ab y deberemos de ver los datos al final de la ejecución del test.
 
@@ -171,3 +173,10 @@ Como anteriormente hacemos el curl correspondiente al balanceador, en este caso 
 Ahora ejecutaremos siege para cada una de las concurrencias a testear a la dirección del balanceador nginx
     
     siege -b -t60S -c 70 -v http://192.168.1.103
+    
+![alt text][siegecaso3]
+<br><br>
+
+Por ultimo analizaremos los datos reunidos de todas las ejecucines de siege para los diferentes casos y concurrencias, en la siguiente tabla se muestran todos los datos obtenidos en las ejeciones de los test.
+
+![alt text][graficaSiege]
