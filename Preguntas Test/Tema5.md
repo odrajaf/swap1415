@@ -38,7 +38,7 @@
 >
 > d)La b y c son correctas.
 > 
->**Respuesta Correcta:d**
+>**Respuesta Correcta: d**
 </br>
 
 ###4º En los test o benchmark, ¿que tipo de prueba aplica fuertes picos de carga durante cortos periodos?.
@@ -51,5 +51,5 @@
 >
 > d)Humo.
 > 
->**Respuesta Correcta:c**
+>**Respuesta Correcta: c**
 </br>
