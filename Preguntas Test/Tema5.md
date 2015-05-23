@@ -40,3 +40,16 @@
 > 
 >**Respuesta Correcta:d**
 </br>
+
+###4º En los test o benchmark, ¿que tipo de prueba aplica fuertes picos de carga durante cortos periodos?.
+
+> a)Carga.
+>
+> b)Estrés.
+>
+> c)Sobrecarga.
+>
+> d)Humo.
+> 
+>**Respuesta Correcta:c**
+</br>
