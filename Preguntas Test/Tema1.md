@@ -8,6 +8,8 @@
 > **b) Hacer una planificación junto con un trabajo de inicial de configuración buscando la configuración más adecuada para el tipo de sitio web a implementar.**
 > 
 > c) Siempre conviene partir de una máquica con un gran hardware para solventar los posibles problemas de escalavilidad en el futuro.
+> 
+> d) Buscar una configuración de servidores distribuida geograficamente porque mejora la redundancia y disponibilidad de los datos.
 
 </br>
 ####2º Concepto de Granja Web:
@@ -17,3 +19,5 @@
 > **b) Un es un conjunto de servidores dedicados a servir contenido web a los usuarios finales, donde cada servidor servidores servirá un servicio concreto (BD, paginas estaticas, aplicaciones dinámicas,etc).**
 > 
 > c)Un es un conjunto de servidores dedicados a servir contenido web a los usuarios finales, donde cada servidor no será redundante y la diversificación de servicios suplirá las necesidades de los usuarios.
+> 
+> d)Una servidor que virtualiza un conjunto de máquinas que realizan los diferentes servicios suponinedo una gran escalabilidad en el futuro.
