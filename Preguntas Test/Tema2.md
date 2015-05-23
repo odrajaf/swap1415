@@ -2,13 +2,15 @@
 
 ####1º Que porcentaje de disponibilidad tendrá el servidor web si contamos con **3 máquinas redundantes** con un **90% de disponibilidad cada una**:
 
-> **a)99,9%** 
+> a)99,9%
 > 
 > b)97,75%
 > 
 > c)99,6625%
 > 
 > c)99,99%
+> 
+>**Respuesta Correcta: a**
 </br>
 
 ####2º Necesitamos hacer actualizaciones de software de nuestros equipos y durente un tiempo los servidores estarán no disponibles,</br> ¿cómo haremos realizaremos las actulizaciones del software?
@@ -17,9 +19,11 @@
 > 
 > b)Nunca deberemos actualizar el software una vez el servidor está realizando un servicio a los usuarios. 
 > 
-> **c)Se realizará la actualización en horas de menor uso por los usuarios.**
+> c)Se realizará la actualización en horas de menor uso por los usuarios.
 >
 > d)Cuando salga la actualización pertinente del software que estamos usando.
+> 
+>**Respuesta Correcta: c**
 
 </br>
 
@@ -29,9 +33,11 @@
 > 
 > b)Ampliación Vertical.
 > 
-> **c)Ampliación Horizontal además de comprobar que el ancho de banda es suficiente.**
+> c)Ampliación Horizontal además de comprobar que el ancho de banda es suficiente.
 >
 > d)No podemos ampliar más el sistema ya que hemos actualizado el hardware de la granja web.
+> 
+>**Respuesta Correcta: c**
 
 </br>
 </br>
