@@ -191,7 +191,7 @@ Comenzaremos analizando la **disponibilidad**, en este caso hemos obtenido resul
 
 Curiosamente una sola máquina no puede cubrir más de las 70 peticiones concurrentes mientras que con Nginx se cubrian incluso con niveles de concurrencia mucho más altos. 
 
-HAproxy muestra unos datos muy por debajo que una sola máquina lo que nos hizo comprobar que balanceaba correctamente, como resultado vimos que se debía a la limitación de conexiones del archivo de configuración `/etc/haproxy/haproxy.cfg` concretamente el parametro **maxconn**. Con maxconn 1000 
+HAproxy muestra unos datos muy por debajo que una sola máquina lo que nos hizo comprobar que balanceaba correctamente, como resultado vimos que se debía a la limitación de conexiones del archivo de configuración `/etc/haproxy/haproxy.cfg` concretamente el parametro **maxconn**. Con maxconn 1000 resolvía peticiones correctamente ya que es el limite de ab y aproximadamente las peticiones totales que usamos con siege.
 <br><br>
 
 El **tiempo transcurrido** es más bien una referencia para los demás parametros por lo que su gráfica no nos da demasiados datos, además de que todos tiempos de referencia se hicienron en 60s
