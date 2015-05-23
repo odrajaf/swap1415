@@ -41,3 +41,17 @@
 
 </br>
 
+####4º Que principal caracteristica tiene usar una configuración con doble DMZ:
+
+> a)El front-rail y el back-rail se encuentran separados por cortafuegos conectados a Internet separando totalmente el ancho de banda de los servidores de la red corporativa. 
+>
+> b)El uso de un solo cortafuegos con una doble configuración hace costosa la configuración pero con grandes beneficios de funcionamiento.
+>
+> c)En el front-rail los servidores quedan conectados a internet a través de un cortafuegos mientras que el back-rail estarán los servidores que no necesiten conexion de internet.
+>
+> d)El front-rail y el back-rail pueden usarse de forma que se balancea la carga de los servidores haciendo un servicio más robusto el sistema.
+> 
+>**Respuesta Correcta: c**
+
+</br>
+
