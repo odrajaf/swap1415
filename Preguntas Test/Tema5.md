@@ -30,13 +30,13 @@
 
 ####3º Como sería el tipo de trafico de una tienda web:
 
-> a)
+> a)La velocidad no es un factor importante pero consumen el ancho de banda máximo rápidamente.
 >
-> b)
+> b)Debe soportar sesiones largas.
 >
-> c)
+> c)Se busca una buena experiencia para el usuario.
 >
-> d)
+> d)La b y c son correctas.
 > 
->**Respuesta Correcta:**
+>**Respuesta Correcta:d**
 </br>
