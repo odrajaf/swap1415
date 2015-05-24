@@ -3,6 +3,8 @@
 >###[Práctica 2](https://github.com/odrajaf/swap1415/blob/master/Practica2/P2__Eloy-Fajardo-Sanchez.md)
 >###[Práctica 3](https://github.com/odrajaf/swap1415/blob/master/Practica3/P3__Eloy-Fajardo-Sanchez.md)
 >###[Práctica 4](https://github.com/odrajaf/swap1415/blob/master/Practica4/P4__Eloy-Fajardo-Sanchez.md)
+>###[Práctica 5](https://github.com/odrajaf/swap1415/blob/master/Practica5/P5.md)
+>###[Práctica 6](https://github.com/odrajaf/swap1415/blob/master/Practica6/P6.md)
 
 
 ##Preguntas tipo Test
