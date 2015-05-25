@@ -41,15 +41,15 @@ como un proxy.
 >**Respuesta Correcta: a**
 </br>
 
-####4º :
+####4º El balanceador:
 
-> a) 
+> a) Solo reenvia paquetes de red modificando la ip de destino encargandose de las funciones de seguridad el cortafuegos.
 >
-> b) 
+> b) Complementa al cortafuegos.
 >
-> c) 
+> c) Puede limitar o denegar completamente el acceso a listas de IP.
 >
-> d) 
+> d) b y c son correctas.
 > 
->**Respuesta Correcta: a**
+>**Respuesta Correcta: d**
 </br>
