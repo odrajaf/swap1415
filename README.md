@@ -14,10 +14,11 @@
 >###[Tema 3](https://github.com/odrajaf/swap1415/blob/master/Preguntas%20Test/Tema3.md)
 >###[Tema 4](https://github.com/odrajaf/swap1415/blob/master/Preguntas%20Test/Tema4.md)
 >###[Tema 5](https://github.com/odrajaf/swap1415/blob/master/Preguntas%20Test/Tema5.md)
+>###[Tema 6](https://github.com/odrajaf/swap1415/blob/master/Preguntas%20Test/Tema6.md)
 
 
 
 ##Actividades
 
 >###[Act.2.1](https://github.com/odrajaf/swap1415/blob/master/Actividades/Tema2.md)
-
+>###[Act.6.2](https://github.com/odrajaf/swap1415/blob/master/Actividades/Tema6.md)
